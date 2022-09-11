@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Layout from "../layouts/Layout";
 import PortfolioItem from "../components/Portfolioite";
 
-const fetchParams = {};
+const URL = process.env.STRAPI_BASE_URL;
 
 const Home: NextPage = () => {
   return (
