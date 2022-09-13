@@ -25,7 +25,7 @@ const Home: NextPage<{ data: PortfolioItemType[] }> = ({ data }) => {
   return (
     <Layout>
       <section className="bg-white dark:bg-gray-900">
-        <div className="container px-6 py-10 mx-auto">
+        <div className="container py-5 mx-auto grid grid-cols-1 gap-8 lg:grid-cols-2">
           {data.map((portfolioItem) => {
             return (
               <PortfolioItem
