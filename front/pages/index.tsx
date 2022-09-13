@@ -26,8 +26,13 @@ const Home: NextPage<{ data: PortfolioItemType[] }> = ({ data }) => {
     <Layout>
       <section className="bg-white dark:bg-gray-900">
         <div className="container px-6 py-10 mx-auto">
-          {data.map((portfolioItem, index: number) => {
-            return <PortfolioItem portfolioItem={portfolioItem} key={index} />;
+          {data.map((portfolioItem) => {
+            return (
+              <PortfolioItem
+                attributes={portfolioItem.attributes}
+                key={portfolioItem.id}
+              />
+            );
           })}
         </div>
       </section>

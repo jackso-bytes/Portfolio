@@ -1,4 +1,18 @@
-const PortfolioItem = () => {
+import { PortfolioItemType } from "../types";
+
+const PortfolioItem = ({ attributes }: PortfolioItemType) => {
+  const {
+    title,
+    description,
+    address,
+    demo,
+    host,
+    createdAt,
+    updatedAt,
+    publishedAt,
+  } = attributes;
+
+  console.log(attributes);
   return (
     <div className="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
       <div>
@@ -8,16 +22,12 @@ const PortfolioItem = () => {
           alt=""
         ></img>
         <div className="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
-          <a
-            href="#"
-            className="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl"
-          >
-            All the features you want to know
-          </a>
+          <h2 className="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+            {title}
+          </h2>
 
           <p className="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-            veritatis sint autem nesciunt, laudantium quia tempore delect
+            {description}
           </p>
 
           <p className="mt-3 text-sm text-blue-500">21 October 2019</p>
