@@ -5,6 +5,7 @@ import { LinkType } from "../types";
 
 const Header = () => {
   const links: LinkType[] = [
+    { name: "About", link: "/" },
     { name: "Portfolio", link: "portfolio" },
     { name: "Articles", link: "articles" },
   ];
@@ -19,7 +20,7 @@ const Header = () => {
                 className="text-2xl font-bold text-gray-800 transition-colors duration-300 transform dark:text-white sm:text-3xl hover:text-gray-700 dark:hover:text-gray-300"
                 href="#"
               >
-                Brand
+                Tom.io
               </a>
             </div>
             <div className="flex sm:hidden">
