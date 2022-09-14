@@ -16,3 +16,8 @@ export interface PortfolioItemType {
 export interface PortfolioItemsResType {
   data: PortfolioItemType[];
 }
+
+export interface LinkType {
+  name: string;
+  link: string;
+}
