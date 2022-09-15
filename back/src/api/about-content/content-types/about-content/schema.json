@@ -20,6 +20,19 @@
     },
     "YouTubeShowCase": {
       "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "HeroImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
