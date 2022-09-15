@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nav_structures",
+  "info": {
+    "singularName": "nav-structure",
+    "pluralName": "nav-structures",
+    "displayName": "NavStructure",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
