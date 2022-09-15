@@ -9,7 +9,7 @@ export interface AttributesType {
   publishedAt: string;
 }
 export interface PortfolioItemType {
-  id: number;
+  id?: number;
   attributes: AttributesType;
 }
 
