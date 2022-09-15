@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Layout from "../layouts/Layout";
 import PortfolioItem from "../components/Portfolioitem";
 import { PortfolioItemsResType, PortfolioItemType } from "../types";
-import { GetStaticProps, InferGetStaticPropsType } from "next";
+import { GetStaticProps } from "next";
 
 const URL = process.env.STRAPI_BASE_URL;
 
