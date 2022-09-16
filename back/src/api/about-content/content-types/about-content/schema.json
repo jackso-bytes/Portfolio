@@ -15,24 +15,25 @@
     "body": {
       "type": "richtext"
     },
-    "GitHubShowCase": {
+    "gitHubShowCase": {
       "type": "string"
     },
-    "YouTubeShowCase": {
+    "youTubeShowCase": {
       "type": "string"
     },
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "HeroImage": {
+    "heroImage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }
