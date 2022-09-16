@@ -1,5 +1,5 @@
+import { IconLink } from "./IconLink";
 import { PortfolioItemType } from "../types";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faServer } from "@fortawesome/free-solid-svg-icons";
 
@@ -20,18 +20,9 @@ const PortfolioItem = ({ attributes }: PortfolioItemType) => {
         <p className="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
           {description}
         </p>
-        <a href={host} className="flex items-center pt-2">
-          <FontAwesomeIcon icon={faServer} className="text-purple-500 pr-4" />
-          <p>Hosted Version</p>
-        </a>
-        <a href={address} className="flex items-center pt-2">
-          <FontAwesomeIcon icon={faGithub} className="pr-4" />
-          <p>GitHub Repo</p>
-        </a>
-        <a href={demo} className="flex items-center pt-2">
-          <FontAwesomeIcon icon={faYoutube} className="text-red-500 pr-4" />
-          <p>Demo</p>
-        </a>
+        <IconLink link={host} icon={faServer} text={"Hosted version"} />
+        <IconLink link={address} icon={faGithub} text={"GitHub repo"} />
+        <IconLink link={demo} icon={faYoutube} text={"Dem"} />
       </div>
     </div>
   );
