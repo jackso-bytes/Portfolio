@@ -16,7 +16,7 @@ export const IconLink = ({
 }: IconLinkProps) => {
   return (
     <a href={link} className="flex items-center pt-2">
-      <FontAwesomeIcon icon={icon} className={`pr-4 ${iconColorClass}`} />
+      <FontAwesomeIcon icon={icon} className={`pr-1.5 ${iconColorClass}`} />
       <p>{text}</p>
     </a>
   );
