@@ -20,9 +20,19 @@ const PortfolioItem = ({ attributes }: PortfolioItemType) => {
         <p className="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
           {description}
         </p>
-        <IconLink link={host} icon={faServer} text={"Hosted version"} />
+        <IconLink
+          link={host}
+          icon={faServer}
+          iconColorClass="text-purple-500"
+          text={"Hosted version"}
+        />
         <IconLink link={address} icon={faGithub} text={"GitHub repo"} />
-        <IconLink link={demo} icon={faYoutube} text={"Dem"} />
+        <IconLink
+          link={demo}
+          icon={faYoutube}
+          iconColorClass="text-red-500"
+          text={"Dem"}
+        />
       </div>
     </div>
   );
