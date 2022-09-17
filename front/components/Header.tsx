@@ -20,7 +20,7 @@ const Header = () => {
                 className="text-2xl font-bold text-gray-800 transition-colors duration-300 transform dark:text-white sm:text-3xl hover:text-gray-700 dark:hover:text-gray-300"
                 href="#"
               >
-                Tom.io
+                Tom Jackson
               </a>
             </div>
             <div className="flex sm:hidden">
@@ -39,11 +39,11 @@ const Header = () => {
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    stroke-width="2"
+                    strokeWidth="2"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="M4 8h16M4 16h16"
                     />
                   </svg>
@@ -54,11 +54,11 @@ const Header = () => {
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    stroke-width="2"
+                    strokeWidth="2"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="M6 18L18 6M6 6l12 12"
                     />
                   </svg>
@@ -90,15 +90,7 @@ const Header = () => {
                 type="button"
                 className="flex items-center focus:outline-none"
                 aria-label="toggle profile dropdown"
-              >
-                <div className="w-8 h-8 overflow-hidden border-2 border-gray-400 rounded-full">
-                  <img
-                    src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
-                    className="object-cover w-full h-full"
-                    alt="avatar"
-                  ></img>
-                </div>
-              </button>
+              ></button>
             </div>
           </div>
         </div>
