@@ -12,11 +12,11 @@ const Footer = () => {
       <div className="container px-6 py-8 mx-auto">
         <hr className="my-10 border-gray-200 dark:border-gray-700" />
 
-        <div className="flex flex-col items-center sm:flex-row sm:justify-between">
-          <p className="text-sm text-gray-400">
+        <div className="flex flex-col items-center align-center sm:flex-row sm:justify-between">
+          <p className="text-sm text-gray-400 mt-2.5">
             © Copyright 2022. All Rights Reserved.
           </p>
-          <div className="flex justify-center space-x-8">
+          <div className="grid grid-cols-2 gap-2 mt-4 sm:flex sm:justify-center sm:flex-row sm:space-x-8">
             <IconLink
               link="https://github.com/jackso-bytes"
               icon={faGithub}

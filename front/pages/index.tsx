@@ -32,7 +32,7 @@ const Home: NextPage<{ data: any }> = ({ data }) => {
   return (
     <Layout>
       <section className="bg-white dark:bg-gray-900">
-        <div className="container py-5 mx-auto space-y-8 mt-8">
+        <div className="container flex flex-col align-center justify-center py-5 mx-auto space-y-8 mt-8">
           <img
             className="object-cover rounded-full w-52 h-52 ring-4 ring-gray-300 dark:ring-gray-700 m-auto"
             src="https://images.unsplash.com/photo-1488508872907-592763824245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
@@ -42,7 +42,7 @@ const Home: NextPage<{ data: any }> = ({ data }) => {
             {title}
           </h1>
           <p className="text-gray-500 dark:text-gray-400 text-center">{body}</p>
-          <div className="flex justify-center space-x-8">
+          <div className="grid grid-cols-2 gap-2 m-auto mt-4 sm:flex sm:justify-center sm:flex-row sm:w-full sm:space-x-8">
             <IconLink link={gitHubShowCase} icon={faGithub} text="GitHub" />
             <IconLink
               link={youTubeShowCase}
