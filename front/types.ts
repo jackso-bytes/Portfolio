@@ -4,6 +4,7 @@ export type PortfolioAttributesType = {
   address?: string;
   demo?: string;
   host?: string;
+  defaultLink: string;
   createdAt: string;
   updatedAt: string;
   publishedAt: string;
@@ -19,14 +20,14 @@ export type PortfolioItemsResType = {
 
 export type ArticleAttributesType = {
   title?: string;
-  description?: string;
+  url?: string;
   createdAt: string;
   updatedAt: string;
   publishedAt: string;
 };
 export type ArticleItemType = {
   id?: number;
-  attributes: PortfolioAttributesType;
+  attributes: ArticleAttributesType;
 };
 
 export type ArticleItemsResType = {
