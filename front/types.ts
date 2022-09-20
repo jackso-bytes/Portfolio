@@ -10,7 +10,7 @@ export type PortfolioAttributesType = {
   publishedAt: string;
 };
 export type PortfolioItemType = {
-  id: number;
+  id?: number;
   attributes: PortfolioAttributesType;
 };
 
@@ -26,7 +26,7 @@ export type ArticleAttributesType = {
   publishedAt: string;
 };
 export type ArticleItemType = {
-  id: number;
+  id?: number;
   attributes: ArticleAttributesType;
 };
 
