@@ -4,7 +4,7 @@ import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faServer } from "@fortawesome/free-solid-svg-icons";
 
 const PortfolioItem = ({ attributes }: PortfolioItemType) => {
-  const { title, description, address, demo, host } = attributes;
+  const { title, description, address, demo, host, defaultLink } = attributes;
 
   return (
     <div>
@@ -14,12 +14,14 @@ const PortfolioItem = ({ attributes }: PortfolioItemType) => {
         alt=""
       ></img>
       <div className="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
-        <h2 className="font-semibold text-gray-800 dark:text-white md:text-xl">
-          {title}
-        </h2>
-        <p className="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
-          {description}
-        </p>
+        <a href={defaultLink}>
+          <h2 className="font-semibold text-gray-800 dark:text-white md:text-xl">
+            {title}
+          </h2>
+          <p className="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+            {description}
+          </p>
+        </a>
         {host && (
           <IconLink
             link={host}
