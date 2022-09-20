@@ -14,7 +14,7 @@ const PortfolioItem = ({ attributes }: PortfolioItemType) => {
         alt=""
       ></img>
       <div className="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
-        <h2 className="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+        <h2 className="font-semibold text-gray-800 dark:text-white md:text-xl">
           {title}
         </h2>
         <p className="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
@@ -31,7 +31,7 @@ const PortfolioItem = ({ attributes }: PortfolioItemType) => {
           link={demo}
           icon={faYoutube}
           iconColorClass="text-red-500"
-          text={"Dem"}
+          text={"Demo"}
         />
       </div>
     </div>
