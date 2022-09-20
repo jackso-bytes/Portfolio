@@ -1,4 +1,4 @@
-export interface AttributesType {
+export type PortfolioAttributesType = {
   title?: string;
   description?: string;
   address?: string;
@@ -7,17 +7,17 @@ export interface AttributesType {
   createdAt: string;
   updatedAt: string;
   publishedAt: string;
-}
-export interface PortfolioItemType {
+};
+export type PortfolioItemType = {
   id?: number;
-  attributes: AttributesType;
-}
+  attributes: PortfolioAttributesType;
+};
 
-export interface PortfolioItemsResType {
+export type PortfolioItemsResType = {
   data: PortfolioItemType[];
-}
+};
 
-export interface LinkType {
+export type LinkType = {
   name: string;
   link: string;
-}
+};

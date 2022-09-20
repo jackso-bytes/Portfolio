@@ -1,12 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
-export interface IconLinkProps {
+export type IconLinkProps = {
   link?: string;
   icon: IconDefinition;
   iconColorClass?: string;
   text: string;
-}
+};
 
 export const IconLink = ({
   link,
