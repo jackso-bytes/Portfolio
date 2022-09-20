@@ -34,13 +34,11 @@ const Home: NextPage<{ data: any }> = ({ data }) => {
     <Layout>
       <section className="bg-white dark:bg-gray-900">
         <div className="container flex flex-col items-center justify-center py-5 mx-auto space-y-8 mt-8">
-          <div className="w-14">
-            <img
-              className="object-cover rounded-full w-52 h-52 ring-4 ring-gray-300 dark:ring-gray-700 m-auto"
-              src={heroImage.data[0].attributes.url}
-              alt="hero-image"
-            ></img>
-          </div>
+          <img
+            className="object-cover rounded-full w-52 h-52 ring-4 ring-gray-300 dark:ring-gray-700 m-auto"
+            src={heroImage.data[0].attributes.url}
+            alt="hero-image"
+          ></img>
           <h1 className="text-5xl font-bold text-gray-800 dark:text-white text-center">
             {title}
           </h1>
