@@ -37,6 +37,10 @@
         "videos",
         "audios"
       ]
+    },
+    "defaultLink": {
+      "type": "string",
+      "required": true
     }
   }
 }
