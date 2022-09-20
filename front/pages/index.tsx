@@ -21,7 +21,6 @@ const fetchParams = {
 export const getStaticProps: GetStaticProps = async (context) => {
   const res = await fetch(`${URL}/api/about-contents`, fetchParams),
     aboutContent = await res.json();
-  console.log(aboutContent);
   return {
     props: aboutContent,
   };
