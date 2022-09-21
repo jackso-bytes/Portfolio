@@ -5,8 +5,12 @@ export type ImageObjectType = {
   };
 };
 
-export type Image = {
+export type ImageArray = {
   data: ImageObjectType[];
+};
+
+export type Image = {
+  data: ImageObjectType;
 };
 
 export type PortfolioAttributesType = {
@@ -19,7 +23,7 @@ export type PortfolioAttributesType = {
   createdAt: string;
   updatedAt: string;
   publishedAt: string;
-  image: Image;
+  image: ImageArray;
 };
 export type PortfolioItemType = {
   id?: number;
