@@ -14,7 +14,7 @@ const fetchParams = {
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const res = await fetch(`${URL}/api/blog-post-links`, fetchParams),
+  const res = await fetch(`${URL}/api/blog-post-links?populate=*`, fetchParams),
     blogPosts: ArticleItemsResType = await res.json();
   return {
     props: blogPosts,

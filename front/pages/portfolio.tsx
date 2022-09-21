@@ -14,7 +14,7 @@ const fetchParams = {
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const res = await fetch(`${URL}/api/portfolio-items`, fetchParams),
+  const res = await fetch(`${URL}/api/portfolio-items?populate=*`, fetchParams),
     portfolioItems: PortfolioItemsResType = await res.json();
   return {
     props: portfolioItems,

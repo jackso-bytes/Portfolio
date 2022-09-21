@@ -1,3 +1,14 @@
+export type ImageObjectType = {
+  id: number;
+  attributes: {
+    url: string;
+  };
+};
+
+export type Image = {
+  data: ImageObjectType[];
+};
+
 export type PortfolioAttributesType = {
   title: string;
   description?: string;
@@ -8,6 +19,7 @@ export type PortfolioAttributesType = {
   createdAt: string;
   updatedAt: string;
   publishedAt: string;
+  image: Image;
 };
 export type PortfolioItemType = {
   id?: number;
@@ -24,6 +36,7 @@ export type ArticleAttributesType = {
   createdAt: string;
   updatedAt: string;
   publishedAt: string;
+  image: Image;
 };
 export type ArticleItemType = {
   id?: number;
