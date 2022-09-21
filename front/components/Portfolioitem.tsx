@@ -6,8 +6,6 @@ import { faServer } from "@fortawesome/free-solid-svg-icons";
 const PortfolioItem = ({ attributes }: PortfolioItemType) => {
   const { title, description, address, demo, host, defaultLink, image } =
     attributes;
-
-  console.log(image.data[0].attributes.url);
   return (
     <div>
       <img
