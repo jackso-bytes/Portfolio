@@ -11,7 +11,7 @@ const ArticleItem = ({ attributes }: ArticleItemType) => {
           src={attributes.image.data.attributes.url}
           alt=""
         ></img>
-        <div className="relative z-20 p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+        <div className="relative z-20 w-full p-6 mx-auto my-7 bg-white rounded-md dark:bg-gray-900">
           <h2 className="font-semibold text-gray-800 dark:text-white md:text-xl">
             {title}
           </h2>
