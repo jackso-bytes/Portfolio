@@ -42,6 +42,9 @@
     "defaultLink": {
       "type": "string",
       "required": true
+    },
+    "altText": {
+      "type": "string"
     }
   }
 }

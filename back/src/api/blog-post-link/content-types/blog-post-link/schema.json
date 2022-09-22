@@ -30,6 +30,9 @@
         "videos",
         "audios"
       ]
+    },
+    "altText": {
+      "type": "string"
     }
   }
 }
