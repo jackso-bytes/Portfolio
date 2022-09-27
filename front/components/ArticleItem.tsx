@@ -1,7 +1,7 @@
 import { ArticleItemType } from "../types";
 
 const ArticleItem = ({ attributes }: ArticleItemType) => {
-  const { title, url, image } = attributes;
+  const { title, url, image, altText } = attributes;
 
   return (
     <div>
@@ -9,7 +9,7 @@ const ArticleItem = ({ attributes }: ArticleItemType) => {
         <img
           className="relative z-10 object-cover w-full rounded-md h-96"
           src={image.data.attributes.url}
-          alt=""
+          alt={altText}
         ></img>
         <div className="relative z-20 w-full p-6 mx-auto my-7 bg-white rounded-md dark:bg-gray-900">
           <h2 className="font-semibold text-gray-800 dark:text-white md:text-xl">

@@ -24,6 +24,7 @@ export type PortfolioAttributesType = {
   updatedAt: string;
   publishedAt: string;
   image: ImageArray;
+  altText: string;
 };
 export type PortfolioItemType = {
   id?: number;
@@ -41,6 +42,7 @@ export type ArticleAttributesType = {
   updatedAt: string;
   publishedAt: string;
   image: Image;
+  altText: string;
 };
 export type ArticleItemType = {
   id?: number;

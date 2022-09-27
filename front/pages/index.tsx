@@ -27,7 +27,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 };
 
 const Home: NextPage<{ data: any }> = ({ data }) => {
-  const { title, body, gitHubShowCase, youTubeShowCase, heroImage } =
+  const { title, body, gitHubShowCase, youTubeShowCase, heroImage, altText } =
     data[0].attributes;
 
   return (
@@ -37,7 +37,7 @@ const Home: NextPage<{ data: any }> = ({ data }) => {
           <img
             className="object-cover rounded-full w-52 h-52 ring-4 ring-gray-300 dark:ring-gray-700 m-auto"
             src={heroImage.data[0].attributes.url}
-            alt="hero-image"
+            alt={altText}
           ></img>
           <h1 className="text-5xl font-bold text-gray-800 dark:text-white text-center">
             {title}

@@ -4,14 +4,22 @@ import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faServer } from "@fortawesome/free-solid-svg-icons";
 
 const PortfolioItem = ({ attributes }: PortfolioItemType) => {
-  const { title, description, address, demo, host, defaultLink, image } =
-    attributes;
+  const {
+    title,
+    description,
+    address,
+    demo,
+    host,
+    defaultLink,
+    image,
+    altText,
+  } = attributes;
   return (
     <div>
       <img
         className="relative z-10 object-cover w-full rounded-md h-96"
         src={image.data[0].attributes.url}
-        alt=""
+        alt={altText}
       ></img>
       <div className="relative z-20 w-full p-6 mx-auto my-7 bg-white rounded-md dark:bg-gray-900">
         <a href={defaultLink}>
