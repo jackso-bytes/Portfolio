@@ -20,9 +20,6 @@ export type PortfolioAttributesType = {
   demo?: string;
   host?: string;
   defaultLink: string;
-  createdAt: string;
-  updatedAt: string;
-  publishedAt: string;
   image: ImageArray;
   altText: string;
 };
@@ -38,9 +35,6 @@ export type PortfolioItemsResType = {
 export type ArticleAttributesType = {
   title: string;
   url: string;
-  createdAt: string;
-  updatedAt: string;
-  publishedAt: string;
   image: Image;
   altText: string;
 };
